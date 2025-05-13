@@ -22,13 +22,15 @@ int main() {
         Entity stackEntity("Stack"); // Object is created on stack
         stackEntity.PrintName();
     } // Automatically destroyed when scope ends
-
+    //Entity *p;
     cout << "\nHeap Object:\n";
     {
         Entity* heapEntity = new Entity("Heap"); // Object is allocated on heap
         heapEntity->PrintName();
+        //p = heapEntity;
         delete heapEntity; // Manually deleted (or else memory leak!)
     }
-
+    //p->PrintName(); accessing heap outside block if not manually deleted
+    //delete p;
     return 0;
 }
