@@ -1,23 +1,29 @@
-#include <iostream>
-#include <thread>
+#include <iostream>   // For input and output streams
+#include <thread>     // For using std::thread and std::this_thread
 
-// A simple function that simulates some work
-void printNumbers(const std::string& threadName, int count) {
-    for (int i = 1; i <= count; ++i) {
-        std::cout << threadName << " prints: " << i << std::endl;
+// A global flag to signal when work should stop
+static bool s_Finished = false;
+
+// Function to simulate background work
+void DoWork() {
+    using namespace std::literals::chrono_literals; // Enables use of 1s for time duration
+
+    // Loop runs until s_Finished becomes true
+    while (!s_Finished)
+    {
+        std::cout << "Working...\n";                 // Output a message to indicate work is happening
+        std::this_thread::sleep_for(1s);             // Pause execution for 1 second
     }
 }
 
 int main() {
-    // Launching two threads and passing different arguments
-    std::thread t1(printNumbers, "Thread 1", 5);
-    std::thread t2(printNumbers, "Thread 2", 5);
+    std::thread worker(DoWork);   // Launch a new thread running the DoWork() function
 
-    // Wait for both threads to finish execution
-    t1.join(); // blocks until thread t1 finishes
-    t2.join(); // blocks until thread t2 finishes
+    std::cin.get();               // Wait for user to press Enter
+    s_Finished = true;           // Signal the worker thread to finish
 
-    std::cout << "Both threads have completed their tasks." << std::endl;
+    worker.join();               // Wait for the worker thread to complete execution
+    std::cout << "Finished!\n";   // Output a final message
 
-    return 0;
+    std::cin.get();              // Wait for another Enter before program exits (optional pause)
 }
