@@ -1,6 +1,7 @@
-#include <print>
+#include <iostream>
+using namespace std;
 
 int main() {
-    std::print("Hello world!");
+    cout<<"Hello World\n";
     return 0;
 }
