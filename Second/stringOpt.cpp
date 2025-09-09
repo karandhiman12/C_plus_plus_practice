@@ -5,7 +5,6 @@
 #include <sstream>
 #include <string_view>
 #include <memory>
-#include <algorithm>
 
 class StringOptimizationDemo {
 private:
