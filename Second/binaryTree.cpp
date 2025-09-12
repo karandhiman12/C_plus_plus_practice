@@ -1,6 +1,7 @@
 #include <iostream>
 #include <queue>
 #include <vector>
+#include <memory>
 
 template<typename T>
 class BinaryTree {
