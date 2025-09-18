@@ -3,7 +3,7 @@
 #include <queue>
 #include <climits>
 #include <iomanip>
-#include <algorithm>>
+#include <algorithm>
 
 using namespace std;
 
