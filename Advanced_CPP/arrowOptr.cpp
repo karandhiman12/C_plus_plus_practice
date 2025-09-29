@@ -1,7 +1,6 @@
 #include <iostream>
 #include <memory>
 
-// Defines a simple class 'Entity' with a print method and an integer member variable.
 class Entity {
 public:
     void Print() const {
