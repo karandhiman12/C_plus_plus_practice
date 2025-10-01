@@ -3,6 +3,7 @@
 #include <vector>
 #include <chrono>
 #include <sstream>
+#include <memory>
 #include <string_view>
 
 class StringOptimizationDemo {
