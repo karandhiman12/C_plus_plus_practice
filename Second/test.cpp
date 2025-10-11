@@ -7,7 +7,6 @@
 #include <thread>
 #include <chrono>
 #include <mutex>
-#include <memory>
 
 // CAN Frame structure
 struct CANFrame {
