@@ -3,6 +3,7 @@
 #include <vector>
 #include <memory>
 #include <algorithm>
+#include <algorithm>
 
 template<typename T>
 class BinaryTree {
