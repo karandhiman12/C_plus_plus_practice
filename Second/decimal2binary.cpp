@@ -22,6 +22,8 @@ string decimal2binary(int num) {
     return result;
 }
 int binary2decimal(string str) {
+    //Time Complexity = O(len(str))
+    //Space Complexity = O(1)
     int res = 0;
     int n = str.size();
     int pow = 1;
