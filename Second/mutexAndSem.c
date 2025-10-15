@@ -3,6 +3,7 @@
 #include <pthread.h>
 #include <semaphore.h>
 #include <unistd.h>
+#include <string.h>
 
 // Shared resources
 int shared_counter = 0;
