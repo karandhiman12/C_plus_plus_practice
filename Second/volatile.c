@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
+#include <string.h>
 #include <signal.h>
 
 // ===== EXAMPLE 1: Volatile with Signal Handlers =====
