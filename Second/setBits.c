@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Method 1: Simple iteration - check each bit
 int countSetBits_v1(int n) {
