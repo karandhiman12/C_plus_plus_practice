@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//swapping char array
 void swapCharArray(char arr[], int n) {
     int l = 0, h = n - 1;
     while(l<h){
