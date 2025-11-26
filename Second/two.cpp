@@ -63,13 +63,13 @@ public:
     }
 };
 
-// Initialize static variables
+//Initialize static variables
 int Professor::id_counter = 0;
 int Student::id_counter = 0;
 
 int main() {
     int n, val;
-    cin >> n; // number of objects to create
+    cin >> n; //number of objects to create
     
     Person* per[n];
     
