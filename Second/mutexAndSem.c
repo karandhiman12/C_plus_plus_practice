@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <string.h>
 
-// Shared resources
+//Shared resources
 int shared_counter = 0;
 int buffer[5];
 int buffer_index = 0;
@@ -14,8 +14,8 @@ int buffer_index = 0;
 pthread_mutex_t counter_mutex;
 
 // Semaphores for producer-consumer problem
-sem_t empty_slots;  // Counts empty buffer slots
-sem_t full_slots;   // Counts full buffer slots
+sem_t empty_slots;  //Counts empty buffer slots
+sem_t full_slots;   //Counts full buffer slots
 pthread_mutex_t buffer_mutex;
 
 // ===== MUTEX DEMONSTRATION =====
