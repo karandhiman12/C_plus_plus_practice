@@ -32,7 +32,7 @@ int main(){
     instance->memFunction();
     delete instance;
     double a = 5.25;
-    int b = static_cast<int>(a) + .29;
+    int b = static_cast<int>(a) + .29; //static casting
     cout<<b;
     return 0;
 }
