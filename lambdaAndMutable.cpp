@@ -38,6 +38,6 @@ int main() {
 
     lambda2();
     std::cout << "Outside lambda2, x = " << x << std::endl; // 'x' is now modified
-
+    std::cout<<"The end"<<std::endl;
     return 0;
 }
