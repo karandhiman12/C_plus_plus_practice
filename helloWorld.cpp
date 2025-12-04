@@ -1,7 +1,7 @@
-#include <iostream>
-using namespace std;
+#include <print> // Requires C++23
 
 int main() {
-    cout<<"Hello World";
+    std::println("Hello, C++23!"); // Prints a string and a newline
+    std::print("The value is: {}\n", 42); // Prints a formatted string
     return 0;
 }
