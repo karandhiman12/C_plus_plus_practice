@@ -1,6 +1,8 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+//binary search based question
 int peakValue(vector <int> &arr){
     int s = 0;
     int e = arr.size() - 1;
