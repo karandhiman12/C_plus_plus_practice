@@ -43,6 +43,6 @@ public:
 int main() {
     // Creating an Entity object using the default constructor
     Entity e0;
-
+    std::cout<<std::endl;
     return 0;
 }
