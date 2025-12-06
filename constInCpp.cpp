@@ -24,6 +24,7 @@ int main() {
 
     // Constant pointer to a constant integer (neither value nor pointer can be modified)
     const int* const c = new int;
+    std::cout<<"Hello world"<<std::endl;
 
     return 0; // Return 0 to indicate successful execution
 }
