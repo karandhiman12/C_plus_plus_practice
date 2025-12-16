@@ -1,4 +1,5 @@
 //CAN frame in c++
+//can is a protocol usually used in cars
 
 #include <iostream>
 #include <vector>
