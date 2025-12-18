@@ -1,3 +1,5 @@
+//SPI master in C++
+
 #include <iostream>
 #include <cstdint>
 
