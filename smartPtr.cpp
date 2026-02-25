@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <array>
 
 // Custom implementation of make_unique for C++11 (make_unique is available from C++14 onwards)
 template<typename T, typename... Args>
