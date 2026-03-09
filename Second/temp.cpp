@@ -1,6 +1,8 @@
 #include <iostream>
 
 int main() {
-    std::cout<<"Hello world";
+    int num = 45;
+    int *ptr = &num;
+    
     return 0;
 }
