@@ -6,6 +6,7 @@
 #include <semaphore.h>
 #include <unistd.h>
 #include <string.h>
+#include <math.h>
 
 //Shared resources
 int shared_counter = 0;
